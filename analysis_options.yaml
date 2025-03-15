@@ -1,0 +1,23 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: false
+    strict-raw-types: false
+  errors:
+    invalid_annotation_target: ignore
+    deprecated_member_use: ignore
+    dead_code: warning
+    invalid_null_aware_operator: warning
+  exclude:
+    - lib/generated/**
+    - '**/*.g.dart'
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_single_quotes: true
+    use_key_in_widget_constructors: false
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
+    unnecessary_null_comparison: false
